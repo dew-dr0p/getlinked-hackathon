@@ -10,9 +10,11 @@ export default {
         primary1: '#150E28',
         primary2: '#903AFF',
         primary3: '#D434FE',
+        footer: '#100B20',
         gradient: {
           1: '#903AFF',
-          2: '#FE34B9'
+          2: '#FE34B9',
+          3: '#FF26B9'
         }
       }
     },

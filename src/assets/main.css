@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.container-main {
+  @apply px-12 lg:px-24 xl:px-32
+}
+
 /* #app {
   max-width: 1280px;
   margin: 0 auto;
