@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import PageFooter from '@/components/PageFooter.vue';
 import MainButton from '@/components/MainButton.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
 
@@ -85,10 +86,13 @@ const questions = [
 
     <section class="section-border container-main">
       <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left py-16 gap-16">
-        <div>
+        <div class="grid relative">
+          <img src="/images/star-grad.png" alt="Gradient Star" class="absolute -left-2 md:-left-8 top-20 lg:top-40 w-3 md:w-5">
           <img src="/images/the-big-idea.png" alt="" class="">
+          <img src="/images/arrow.png" alt="Arrow Image" class="absolute right-1/2 -bottom-8 lg:-bottom-4 lg:-right-10 w-5 md:w-7 lg:w-12">
         </div>
-        <div class="max-w-lg grid gap-4">
+        <div class="max-w-lg grid gap-4 relative">
+          <img src="/images/star-pu.png" alt="Star" class="absolute right-0 md:right-4 top-6 w-2 md:w-4 lg:w-auto">
           <SectionHeading title="Introduction to getlinked" subtitle="tech Hackathon 1.0" />
           <p class="text-sm">Our tech hackathon is a melting pot of visionaries, and its purpose is as
           clear as day: to shape the future. Whether you're a coding genius, a 
@@ -100,13 +104,19 @@ const questions = [
       </div>
     </section>
 
+    <div class="relative">
+      <img src="/images/purple-lens-flare.png" alt="Background flare" class="background-flare -top-64">
+      <img src="/images/purple-lens-flare.png" alt="Background flare" class="background-flare top-10 -right-[40rem]">
+    </div>
+
     <section class="section-border container-main">
       <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left lg:py-16 pb-16 gap-3">
         <div class="lg:hidden relative">
-            <img src="/images/star-grad.png" alt="Gradient Star" class="absolute">
+            <!-- <img src="/images/purple-lens-flare.png" alt="Background flare"> -->
             <img src="/images/woman-sitting-down-vector.png" alt="" class="">
           </div>
-        <div class="max-w-lg grid gap-4">
+        <div class="max-w-lg grid gap-4 relative">
+          <img src="/images/star.png" alt="Star" class="opacity-50 absolute -top-5 left-64 w-6">
           <SectionHeading title="Rules and" subtitle="Guidelines" />
           <p class="text-sm">Our tech hackathon is a melting pot of visionaries, and its purpose is as
             clear as day: to shape the future. Whether you're a coding genius, a 
@@ -115,23 +125,35 @@ const questions = [
             of technology, and creating solutions that can change the world,
             that's what we're all about!</p>
           </div>
-          <div class="hidden lg:block">
+          <div class="hidden lg:block relative">
+            <img src="/images/star.png" alt="Star" class="absolute w-6 -left-6 bottom-40">
             <img src="/images/woman-sitting-down-vector.png" alt="" class="">
           </div>
       </div>
     </section>
 
+    <div class="relative">
+      <img src="/images/purple-lens-flare.png" alt="Background flare" class="background-flare top-36 -left-36">
+      <img src="/images/purple-lens-flare.png" alt="Background flare" class="background-flare -right-[38.75rem] top-[29rem]">
+    </div>
+
     <section class="section-border container-main">
       <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left py-16 gap-16">
-        <div>
+        <div class="grid relative">
+          <!-- <div class="grid relative w-32 h-32 rounded-full bg-gradient-to-l from-[#8F01FE] to-[#FF2674] to-[97.24%]"></div> -->
+          <img src="/images/star-pu.png" alt="Star" class="absolute left-36 -top-28">
+          <img src="/images/gradient-circle.svg" alt="Circle Gradient" class="absolute left-16 -top-9  -z-10">
+          <img src="/images/star.png" alt="Star" class="absolute left-[20rem] top-64 opacity-50 w-6">
+          <!-- <img src="/images/star.png" alt="Star" class="absolute right-4 bottom-0 w-7"> -->
           <img src="/images/man-and-woman-looking-at-charts.png" alt="" class="">
         </div>
-        <div class="max-w-xl grid gap-5">
+        <div class="max-w-xl grid gap-5 relative">
           <SectionHeading title="Judging Criteria" subtitle="Key attributes" />
           <div class="grid gap-6">
             <p v-for="(attribute, index) in attributes" :key="index"  class="text-sm"><span class="text-base font-bold text-gradient-3">{{ attribute.title }}</span> {{ attribute.text }}</p>
           </div>
-          <MainButton text="Read More" class="w-fit justify-self-center lg:justify-self-start" />
+          <MainButton text="Read More" class="w-fit justify-self-center lg:justify-self-start mb-28 mt-8" />
+          <img src="/images/star.png" alt="Star" class="absolute -left-24 top-[40rem] w-69k">
         </div>
       </div>
     </section>
@@ -180,7 +202,7 @@ const questions = [
             for participants.</p>
           </div>
           <div class="grid grid-flow-col gap-8">
-            <div class="border border-primary3 rounded-lg bg-[rgba(212,_52,_254,_0.12)] w-fit h-fit text-center p-7">
+            <!-- <div class="border border-primary3 rounded-lg bg-[rgba(212,_52,_254,_0.12)] w-fit h-fit text-center p-7">
               <img src="/images/silver-medal.png" alt="Silver Medal for 2nd Position" class="-mt-24 mb-4">
               <p class="text-4xl font-bold">2nd</p>
               <p class="text-2xl font-semibold">Runner</p>
@@ -197,7 +219,7 @@ const questions = [
               <p class="text-4xl font-bold">3rd</p>
               <p class="text-2xl font-semibold">Runner</p>
               <p class="text-3xl font-bold text-primary3">N150,000</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -216,12 +238,16 @@ const questions = [
       </div>
     </section>
 
+    <div class="relative">
+      <img src="/images/purple-lens-flare.png" alt="Background flare" class="background-flare -left-48 top-[32rem]">
+    </div>
+
     <section class="container-main">
-      <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left py-16 gap-3">
-        <!-- <div class="lg:hidden">
-          <img src="/images/woman-sitting-down-vector.png" alt="" class="">
-        </div> -->
-        <div class="max-w-lg grid gap-4">
+      <div class="grid lg:grid-cols-2 place-items-center text-center lg:text-left py-40 gap-3">
+        <div class="max-w-lg grid gap-4 relative">
+          <img src="/images/star-pu.png" alt="Star" class="absolute -left-14 top-[37rem]">
+          <img src="/images/star.png" alt="Star" class="absolute opacity-50 left-80 -top-2">
+          <img src="/images/star-pu.png" alt="Star" class="absolute left-[34rem] top-24 w-6">
           <SectionHeading title="Privacy Policy and" subtitle="Terms" />
           <p class="lg:text-sm text-xs text-[rgba(255,_255,_255,_0.75)]">Last updated on September 12, 2023</p>
           <p class="lg:text-sm text-xs mt-4 max-w-md">Below are our privacy & policy, which outline a lot of goodies. 
@@ -254,11 +280,20 @@ const questions = [
             <MainButton text="Read More" class="w-fit justify-self-center lg:justify-self-start " />
           </div>
         </div>
-        <div class="">
+        <div class="grid relative">
+          <img src="/images/padlock.svg" alt="Privacy Terms" class="absolute left-6 -top-52">
+          <img src="/images/star.png" alt="Star" class="absolute -top-9 left-[29rem]">
+          <img src="/images/star.png" alt="Star" class="absolute opacity-50 bottom-44 -right-7">
+          <img src="/images/star.png" alt="Star" class="absolute left-28 bottom-56">
+          <img src="/images/star-grad.png" alt="Gradient Star" class="absolute left-44 bottom-80">
           <img src="/images/man-standing-on-padlock.png" alt="" class="">
         </div>
       </div>
     </section>
 
   </main>
+
+  <footer>
+    <PageFooter />
+  </footer>
 </template>

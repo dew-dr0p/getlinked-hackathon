@@ -13,7 +13,8 @@ body {
   min-height: 100vh;
   color: #fff;
   background: #150E28;
-  /* background-blend-mode: hard-light; */
+  /* background-image: url(/images/purple-lens-flare.png);
+  background-blend-mode: hard-light; */
   transition:
     color 0.5s,
     background-color 0.5s;

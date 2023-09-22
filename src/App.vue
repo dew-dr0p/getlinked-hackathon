@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue';
-import PageFooter from './components/PageFooter.vue';
 
 
 </script>
@@ -12,7 +11,4 @@ import PageFooter from './components/PageFooter.vue';
 
   <RouterView />
 
-  <footer>
-    <PageFooter />
-  </footer>
 </template>
