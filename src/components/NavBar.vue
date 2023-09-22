@@ -11,7 +11,7 @@ const showNavMenu = () => {
 </script>
 
 <template>
-    <div class="grid grid-flow-col items-center justify-between container-main pt-8 md:pt-12 lg:pt-16 pb-6" :class="navMenu ? '' : 'border-b border-[rgba(255,_255,_255,_0.18)]'">
+    <div class="grid grid-flow-col items-center justify-between container-main pt-8 md:pt-12 lg:pt-16 pb-6" :class="navMenu ? '' : 'section-border'">
         <RouterLink v-if="!navMenu" to="/" class="text-4xl font-['Clash_Display'] font-bold">get<span class="text-primary3">linked</span></RouterLink>
         <div v-if="navMenu" class="w-10"></div>
         <nav class="lg:grid grid-flow-col items-center gap-14 hidden">

@@ -8,6 +8,10 @@
   @apply px-12 lg:px-24 xl:px-32
 }
 
+.section-border {
+  @apply border-b border-[rgba(255,_255,_255,_0.18)]
+}
+
 /* #app {
   max-width: 1280px;
   margin: 0 auto;

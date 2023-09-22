@@ -12,8 +12,8 @@
 body {
   min-height: 100vh;
   color: #fff;
-  background: url('/images/purple-lens-flare.png'), #150E28 -155.25px -155px / 114.411% 118.9% no-repeat;
-  background-blend-mode: hard-light;
+  background: #150E28;
+  /* background-blend-mode: hard-light; */
   transition:
     color 0.5s,
     background-color 0.5s;
