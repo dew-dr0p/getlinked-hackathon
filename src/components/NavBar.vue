@@ -18,8 +18,8 @@ const showNavMenu = () => {
             <p>Timeline</p>
             <p>Overview</p>
             <p>FAQs</p>
-            <p>Contact</p>
-            <MainButton />
+            <RouterLink to="/contact">Contact</RouterLink>
+            <RouterLink to="/register"><MainButton /></RouterLink>
         </nav>
         <img v-if="!navMenu" @click="showNavMenu" src="/images/menu.svg" alt="NavBar Menu" class="block lg:hidden">
         <!-- <img v-else @click="showNavMenu" src="/images/close.svg" alt="Close NavBar Menu" class="block lg:hidden p-2 rounded-full border-4 border-solid" style="background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to bottom right, #903AFF, #FF26B9) border-box; "> -->
@@ -31,7 +31,16 @@ const showNavMenu = () => {
         <p>Timeline</p>
         <p>Overview</p>
         <p>FAQs</p>
-        <p>Contact</p>
-        <MainButton />
+        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/register"><MainButton /></RouterLink>
     </nav>
 </template>
+
+<style scoped>
+.router-link-active {
+    background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+</style>
